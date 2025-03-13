@@ -81,7 +81,6 @@ TEMPLATES = [
 WSGI_APPLICATION = 'inventoryproject.wsgi.application'
 
 
-
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
@@ -140,3 +139,5 @@ STATIC_ROOT = (BASE_DIR/"asert/")
 LOGIN_REDIRECT_URL = 'dashboard-index'
 
 LOGIN_URL = 'user-login'
+
+ALLOWED_HOSTS = ['sistem-coinres.onrender.com', '127.0.0.1', 'localhost']
