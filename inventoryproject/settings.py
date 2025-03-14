@@ -7,7 +7,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '@ujr-e&a%8m%6!z(+ka16+(sm6cug(h6noe%#p%=6%d2nz5t+#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False  # Cambiar a False en producción
+DEBUG = True  # Cambiar a False en producción
 
 ALLOWED_HOSTS = ['sistem-coinres.onrender.com', '127.0.0.1', 'localhost']
 
@@ -20,6 +20,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
 
     # Apps del proyecto
     'dashboard.apps.DashboardConfig',
@@ -101,5 +102,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # Redirección de login
 LOGIN_REDIRECT_URL = 'dashboard-index'
 LOGIN_URL = 'user-login'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 ALLOWED_HOSTS = ['sistem-coinres.onrender.com', '127.0.0.1', 'localhost']
